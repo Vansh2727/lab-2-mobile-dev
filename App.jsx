@@ -8,13 +8,13 @@ import React from 'react';
 import {
   SafeAreaView,
   StyleSheet} from 'react-native';
-import TodoList from './components/ToDoList';
-import TodoForm from './components/ToDoForm';
+  import TodoList from './components/ToDoList';
+import ToDoForm from './components/ToDoForm';
 
 function App() {
   return (
     <SafeAreaView>
-      <ToDoList/>
+      <TodoList/>
       <ToDoForm/>
       
     </SafeAreaView>
