@@ -10,7 +10,6 @@ import {
 function ToDoList(props){
 
     return (
-
         <>
         <ScrollView>
         <Pressable>
@@ -29,7 +28,6 @@ function ToDoList(props){
           </View>
         </Pressable>
       </ScrollView>
-      
         </>
     );
 }
