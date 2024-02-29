@@ -19,7 +19,7 @@ function App() {
 
   return (
     <SafeAreaView>
-      <TodoList/>
+      <TodoList tasks={tasks}/>
       <ToDoForm/>
       
     </SafeAreaView>

@@ -21,6 +21,8 @@ function ToDoList({tasks}) {
       </ScrollView>
     </>
   );
+
+  
 }const styles = StyleSheet.create({
     task: {
       padding: 10,
