@@ -5,23 +5,26 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet} from 'react-native';
-  import TodoList from './components/ToDoList';
+import {SafeAreaView} from 'react-native';
+import ToDoList from './components/ToDoList';
 import ToDoForm from './components/ToDoForm';
 import {useState} from 'react';
 
-
 function App() {
-
   const [tasks, setTasks] = useState(['Do laundry', 'Go to gym', 'Walk dog']);
+
+  const addTask = task => {
+    if (!tasks.includes(task)) {
+      setTasks([...tasks, task]);
+    } else {
+      alert('Task already exists!');
+    }
+  };
 
   return (
     <SafeAreaView>
-      <TodoList tasks={tasks}/>
-      <ToDoForm/>
-      
+      <ToDoList tasks={tasks} />
+      <ToDoForm addTask={addTask} />
     </SafeAreaView>
   );
 }
