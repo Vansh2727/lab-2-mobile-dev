@@ -1,11 +1,14 @@
-import React from "react";
+import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
   Pressable,
   View,
-  Text} from 'react-native';
+  Text,
+  ScrollView,
+  TextInput,
+  Button,
+} from 'react-native';
 
 function ToDoList({tasks}) {
   return (
@@ -21,22 +24,20 @@ function ToDoList({tasks}) {
       </ScrollView>
     </>
   );
+}
 
-  
-}const styles = StyleSheet.create({
-    task: {
-      padding: 10,
-      borderBottomWidth: 1,
-      borderColor: '#ccc',
-    },
-    completed: {
-      backgroundColor: '#e0e0e0',
-    },
-    taskText: {
-      fontSize: 16,
-    },
-  });
-  
+const styles = StyleSheet.create({
+  task: {
+    padding: 10,
+    borderBottomWidth: 1,
+    borderColor: '#ccc',
+  },
+  completed: {
+    backgroundColor: '#e0e0e0',
+  },
+  taskText: {
+    fontSize: 16,
+  },
+});
 
-  
 export default ToDoList;
