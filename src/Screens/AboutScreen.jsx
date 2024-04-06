@@ -8,7 +8,7 @@ const AboutScreen = ({navigation}) => {
       <View>
         <Text>This is the About Screen</Text>
         <Text>App Name: Incredible ToDo List App</Text>
-        <Text>Your Name: Kapilmeet Singh</Text>
+        <Text>Your Name: Vansh Malhotra</Text>
         <Text>Current Date: 05-04-2024</Text>
         <Button
           title="Go to Home"
